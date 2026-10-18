@@ -181,3 +181,19 @@ select {
 .btn:hover {
     background-color: rgb(13, 4, 189);
 }
+
+footer {
+    background-color:rgb(6, 6, 39);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
