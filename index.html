@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+            <h1 class="logo">Suleiman Dajani</h1>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <h1>Hi, I'm Suleiman</h1>
+                <p>I'm learning frontend web development. I build pages with HTML and CSS, and I track my work with Git.</p>
+                <a href="#projects">See my work</a>
+            </div>
+            <div class="hero-image">
+                <img src="C:\Users\User\Desktop\Qafza\Qafza (Front End)\HTML & CSS, Git & GitHub\Final Project\my-portfolio\WhatsApp 17_10_2026 20_08_43.png" alt="Suleiman Profile Photo">
+            </div>
+        </section>
+    
+        <section class="projects-section" id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <span class="badge">Latest</span>
+                    <h3>Student Dashboard</h3>
+                    <p>A responsive dashboard built with CSS Grid and positioning.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Landing Page</h3>
+                    <p>A full landing page laid out with Flexbox.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Registration Form</h3>
+                    <p>A sign-up form with labels and validation.</p>
+                </div>
+            </div>
+            <div class="projects-sec-grid">
+                <div class="project-card">
+                    <h3>Recipe Card</h3>
+                    <p>A styled card using the box model and shadows.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Recipe Page</h3>
+                    <p>My first page with headings, lists and images.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Git Practice</h3>
+                    <p>Commits, branches and my first push to GitHub.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Flexbox Page</h3>
+                    <p>A navbar, cards and footer, delivered through a pull request.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                    <option value="project">A project</option>
+                    <option value="job">Job opportunity</option>
+                    <option value="other">Other</option>
+                </select>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Suleiman Dajani</p>
+            <a href="#top" class="back-to-top">↑</a>
+        </footer>
+
+    </main>
+
+</body>
+</html>
