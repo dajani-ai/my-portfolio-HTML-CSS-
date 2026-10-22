@@ -14,24 +14,41 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
     z-index: 1000;
 }
 
 .logo {
     color: white;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 0.8rem;
+    list-style: none;
+    font-size: 0.9rem;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+        font-size: 1rem;
+    }
 }
 
 a:hover {
@@ -40,9 +57,22 @@ a:hover {
 
 .hero {
     display: flex;
-    height: 25vh;
-    padding: 4.5rem 2rem;
-    gap: 30rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 5rem 2rem;
+        gap: 2rem;
+    }
 }
 
 .hero-content h1 {
@@ -89,16 +119,16 @@ a:hover {
 }
 
 .projects-grid {
-    maargin-top: 1.5rem;
+    margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: 570px 285px 285px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 .projects-sec-grid {
     display: grid;
-    grid-template-columns: 270px 277px 280px 290px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
 }
 
